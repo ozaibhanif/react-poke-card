@@ -33,7 +33,7 @@ function Pockemon() {
     }
     return (
         <>
-            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Pockemon</button>
+            <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">PockemonApi</button>
 
                 <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
                   <div class="offcanvas-header">
@@ -44,8 +44,8 @@ function Pockemon() {
                   {pockemon && pockemon.map(item =>  <p onClick={()=> fetchedData(item.url)}>{item.name}</p>)}
                   </div>
                   <div>
-                <button onClick={()=> call(previous)} className="btn btn-primary" style={{"width": "100px", "display": "inline", "margin": "15px"}}>Previous</button>
-                <button onClick={()=> call(next)} className="btn btn-primary" style={{"width": "100px", "display": "inline"}}>Next</button>
+                <button onClick={()=> call(previous)} className="btn btn-secondary" style={{"width": "100px", "display": "inline", "margin": "15px"}}>Backward</button>
+                <button onClick={()=> call(next)} className="btn btn-secondary" style={{"width": "100px", "display": "inline"}}>Forward</button>
                 </div>
                 </div>
                 {data && <Card data={data}/>}
