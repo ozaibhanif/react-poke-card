@@ -33,19 +33,19 @@ function Pockemon() {
     }
     return (
         <>
-            <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">PockemonApi</button>
+            <button class="btn btn-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Pockemon Menu</button>
 
                 <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
                   <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Pockemons</h5>
+                    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Pockemons List</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                   </div>
                   <div class="offcanvas-body">
                   {pockemon && pockemon.map(item =>  <p onClick={()=> fetchedData(item.url)}>{item.name}</p>)}
                   </div>
                   <div>
-                <button onClick={()=> call(previous)} className="btn btn-secondary" style={{"width": "100px", "display": "inline", "margin": "15px", "border-radius" :"50px"}}>Backward</button>
-                <button onClick={()=> call(next)} className="btn btn-secondary" style={{"width": "100px", "display": "inline" , "border-radius" : "50px"}}>Forward</button>
+                <button onClick={()=> call(previous)} className="btn btn-warning" style={{"width": "100px", "display": "inline", "margin": "15px", "border-radius" :"50px"}}>Backward</button>
+                <button onClick={()=> call(next)} className="btn btn-warning" style={{"width": "100px", "display": "inline" , "border-radius" : "50px"}}>Forward</button>
                 </div>
                 </div>
                 {data && <Card data={data}/>}
