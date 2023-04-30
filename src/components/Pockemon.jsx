@@ -44,8 +44,8 @@ function Pockemon() {
                   {pockemon && pockemon.map(item =>  <p onClick={()=> fetchedData(item.url)}>{item.name}</p>)}
                   </div>
                   <div>
-                <button onClick={()=> call(previous)} className="btn btn-secondary" style={{"width": "100px", "display": "inline", "margin": "15px"}}>Backward</button>
-                <button onClick={()=> call(next)} className="btn btn-secondary" style={{"width": "100px", "display": "inline"}}>Forward</button>
+                <button onClick={()=> call(previous)} className="btn btn-secondary" style={{"width": "100px", "display": "inline", "margin": "15px", "border-radius" :"50px"}}>Backward</button>
+                <button onClick={()=> call(next)} className="btn btn-secondary" style={{"width": "100px", "display": "inline" , "border-radius" : "50px"}}>Forward</button>
                 </div>
                 </div>
                 {data && <Card data={data}/>}
